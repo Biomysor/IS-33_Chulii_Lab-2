@@ -1,0 +1,112 @@
+body {
+    padding: 20px;
+    background-image: url('images/50 Unforgettable Photos of Muhammad Ali.jfif');
+    background-repeat: no-repeat;
+    background-size: 500px 800px;
+    background-position: 30px 15px;
+}
+
+body header {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.navbar {
+    
+    background-color: #504f4f;
+    overflow: hidden;
+    position:fixed;
+    top: -55px; 
+    left: 0;
+    width: 100%;
+    height: 30px; 
+    transition: top 0.3s; 
+    padding: 20px;
+}
+
+.navbar:hover {
+    top: 0; 
+}
+.button {
+    
+    padding: 15px 25px 15px 25px;
+    
+    
+    float: right;
+    color: white;
+    background-color: #504f4f; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin: 1px;
+}
+
+.button:hover {
+    background-color: #0056b3; 
+}
+
+.headofWeb {
+    padding: auto;
+     
+}
+
+.headofWeb h1 {
+    padding: 20px;
+    font-size: 90px;
+    text-decoration: line-through;
+    transform: translateX(100%);
+    animation: slide-in 1s forwards;
+    text-shadow: 0 0 5px white, 0 0 10px white; 
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.headofWeb p {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    font-size: large;
+    padding-top: 1%; 
+    float: inline-end;
+    padding-right: 10%;
+    transform: translateX(-100%);
+    animation: slide-in 1s forwards;
+}
+
+body header span {
+    text-decoration: line-through;
+}
+
+table {
+    padding: 20px;
+    width: 60%;
+    margin:  auto;
+    border-collapse: collapse;
+     
+}
+
+fieldset {
+    padding: 20px;
+    margin-top: 500px;
+    height: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+th, td {
+    border: 1px solid salmon;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(80, 150, 150);
+    border-radius: 10px;
+    border-style: hidden;
+}
+
+th {
+    background-color: rgb(192, 165, 125);
+    border-style: hidden;
+}
