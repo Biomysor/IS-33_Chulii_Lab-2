@@ -1,57 +1,66 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+    
+}
+
 body {
     padding: 20px;
-    background-image: url('images/50 Unforgettable Photos of Muhammad Ali.jfif');
-    background-repeat: no-repeat;
-    background-size: 500px 800px;
-    background-position: 30px 15px;
+    position: relative; 
+    background:linear-gradient(90deg,rgb(30, 30, 30),rgb(40, 40, 40),rgb(60,60,60),rgb(80,80,80));
 }
-
-body header {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
-
 .navbar {
-    
-    background-color: #504f4f;
-    overflow: hidden;
-    position:fixed;
-    top: -55px; 
+    position: fixed;
+    top: -65px; 
     left: 0;
     width: 100%;
-    height: 30px; 
+    height: 45px; 
     transition: top 0.3s; 
+    background-color: #eebdbd;
     padding: 20px;
+    z-index: 10;
 }
 
 .navbar:hover {
     top: 0; 
 }
+
 .button {
-    
-    padding: 15px 25px 15px 25px;
-    
-    
+    position: relative;
+    z-index: 10;
+    width: 80px; 
+    font-size: 20px; 
+    padding: 10px 30px;
+    text-align: center;
     float: right;
-    color: white;
-    background-color: #504f4f; 
-    text-decoration: none; 
+    color: rgb(236, 125, 125);
+    background-color: #7a7a7a; 
+    background-size: cover;
+    text-decoration:none; 
     border-radius: 5px; 
-    margin: 1px;
+    margin-left: 10px;
+}
+
+.place {
+    position: relative;
+    z-index: 10;
+    margin: auto 50px;
 }
 
 .button:hover {
-    background-color: #0056b3; 
+    background-color: #7ab1ec; 
+    padding: 15px 25px 15px 25px;
 }
 
 .headofWeb {
-    padding: auto;
-     
+
+  margin: 40px;
 }
 
 .headofWeb h1 {
-    padding: 20px;
-    font-size: 90px;
+    margin:0px 0px 50px 100px;
+    padding: 60px;
+    font-size: 96px;
     text-decoration: line-through;
     transform: translateX(100%);
     animation: slide-in 1s forwards;
@@ -66,47 +75,87 @@ body header {
 }
 
 .headofWeb p {
-    display: block;
+    
+    margin:0px 0px 100px 100px;
+    padding: 20px;
     color: rgb(0, 0, 0);
     text-shadow: 0 0 5px rgb(255, 255, 255);
-    font-size: large;
-    padding-top: 1%; 
-    float: inline-end;
-    padding-right: 10%;
+    font-size: x-large;
     transform: translateX(-100%);
     animation: slide-in 1s forwards;
 }
 
-body header span {
-    text-decoration: line-through;
-}
-
-table {
-    padding: 20px;
-    width: 60%;
-    margin:  auto;
-    border-collapse: collapse;
-     
-}
 
 fieldset {
-    padding: 20px;
-    margin-top: 500px;
-    height: 250px;
+    padding: 50px;
+    height: 300px;
     text-align: center;
     border-radius: 10px;
-}
+    border-width: 2px;
+    border-style: dashed;
+    border-image: linear-gradient(90deg, #462691, #ce8e7f, #5f135b, #990d5c, #370b3d) 1;
+    background-size: 400% 100%;
+    animation: gradient 5s ease infinite;
 
-th, td {
-    border: 1px solid salmon;
-    padding: 10px;
+}
+.column {
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 2px solid rgb(0, 152, 202);
+    font-family: Arial, sans-serif;
     text-align: center;
-    background-color: rgb(80, 150, 150);
-    border-radius: 10px;
-    border-style: hidden;
 }
 
-th {
-    background-color: rgb(192, 165, 125);
-    border-style: hidden;
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.hover-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: rgb(141, 187, 164);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 1s ease; /* Анімація для збільшення */
+    background: linear-gradient(90deg, #462691, #ce8e7f, #5f135b, #990d5c, #370b3d);
+    background-size: 400% 100%;
+    animation: gradient 5s ease infinite; /* Анімація градієнта */
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hover-button:hover {
+    transform: scale(1.5); 
+}
+h2{
+   
+    font-size: xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.description{
+    text-align:start;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #477cb4;
+    
+}
+.paragraph {
+  display: flex;
+   
+  margin: 0px 30px 0px 0px;
+    
+    
+   
 }
