@@ -155,7 +155,38 @@ h2{
   display: flex;
    
   margin: 0px 30px 0px 0px;
-    
-    
-   
 }
+.abonement-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px; 
+    
+}
+
+.abonement-table th,
+.abonement-table td {
+    border: 3px solid #612828; /* Жирні світло-сірі рамки */
+    padding: 15px; /* Збільшене наповнення */
+    text-align: center;
+    font-weight: bold; /* Жирний шрифт */
+    font-family:cursive;
+    font-size: large;
+}
+
+.abonement-table th {
+   
+    color: #446485;
+}
+
+.abonement-table tbody tr:nth-child(even) {
+   color: #370b3d;
+}
+
+.abonement-table tbody tr:nth-child(odd) {
+    color: #446485;
+}
+
+
+
+
